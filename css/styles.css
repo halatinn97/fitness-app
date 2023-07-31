@@ -62,17 +62,31 @@ section#home {
     flex-wrap: wrap;
 }
 
+.insta-home {
+    height: 8em;
+}
+
+a.instagram {
+    align-self: baseline;
+    background-color: #fcba03;
+    border-radius: 3em;
+}
+
+a.instagram:hover {
+    filter: brightness(110%);
+    transform: scale(1.1);
+}
+
 .home-img {
     max-width: 100%;
     height: auto;
-    max-height: 50vh;
     margin-left: 2em;
 }
 
 .flex-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     margin-top: 8em;
 }
@@ -81,6 +95,7 @@ section#home {
     text-align: center;
     font-size: 4em;
     margin: 0;
+    align-self: center;
 }
 
 .become-title {
@@ -89,6 +104,7 @@ section#home {
 
 .you-title {
     font-size: 4em;
+    text-shadow: 2px 2px 4px #fcba03;
 }
 
 .best-title {
@@ -98,26 +114,43 @@ section#home {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 3em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2em;
     padding: 2em 10%;
     background-color: black;
     color: white;
     border-top: 5px solid #fcba03;
+    width: 100%;
 }
 
 .grid__item {
-    height: fit-content;
+    height: 12em;
     position: relative;
     padding: 10px;
     text-align: center;
     border: inset;
     border-radius: 2em;
     box-shadow: 0 0 8px 4px #fcba03;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: navajowhite;
+    color: black;
 }
 
+.grid__item:hover {
+    filter: brightness(110%);
+    transform: scale(1.1);
+}
 
+.grid a {
+    text-decoration: none;
+}
+
+.grid-img {
+    height: 6em;
+}
 
 
 /* Media query for mobile */
