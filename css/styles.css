@@ -58,7 +58,6 @@ section#home {
     height: 100vh;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -81,12 +80,13 @@ a.instagram:hover {
     max-width: 100%;
     height: auto;
     margin-left: 2em;
+    align-self: flex-end;
 }
 
 .flex-container {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 8em;
 }
